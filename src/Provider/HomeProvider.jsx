@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export const HomeContext = new createContext();
+export const HomeContext = createContext();
 
 const HomeProvider = ({ children }) => {
 
