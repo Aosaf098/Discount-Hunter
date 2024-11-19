@@ -7,17 +7,17 @@
       "brand_logo": "https://basis.org.bd/public/images/logo/3847d1361a24da5406507aa96b7b194e23012022014400.png",
       "shop-Link": "https://www.daraz.com.bd",
       "category": "E-commerce",
-      "isSaleOn": true,
+      "isSaleOn": false,
       "coupons": [
         {
-          "coupon-code": "DARAZ10",
+          "coupon_code": "DARAZ10",
           "description": "10% off on electronics",
           "expiry-date": "2024-12-31",
           "condition": "Minimum purchase of 2000 BDT",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "FREESHIP",
+          "coupon_code": "FREESHIP",
           "description": "Free shipping on orders over 1000 BDT",
           "expiry-date": "2024-11-30",
           "condition": "Applicable on selected products",
@@ -36,7 +36,7 @@
       "isSaleOn": false,
       "coupons": [
         {
-          "coupon-code": "EVALY50",
+          "coupon_code": "EVALY50",
           "description": "50% off on fashion items",
           "expiry-date": "2024-12-31",
           "condition": "Maximum discount of 1000 BDT",
@@ -55,7 +55,7 @@
       "isSaleOn": false,
       "coupons": [
         {
-          "coupon-code": "PATHAO50",
+          "coupon_code": "PATHAO50",
           "description": "50% off on first ride",
           "expiry-date": "2024-12-31",
           "condition": "New users only",
@@ -71,10 +71,10 @@
       "brand_logo": "https://www.foodpanda.com/wp-content/uploads/2024/05/foodpanda-logo-RGB-stacked.png",
       "shop-Link": "https://www.foodpanda.com.bd",
       "category": "Delivery",
-      "isSaleOn": true,
+      "isSaleOn": false,
       "coupons": [
         {
-          "coupon-code": "PANDA30",
+          "coupon_code": "PANDA30",
           "description": "30% off on your favorite restaurants",
           "expiry-date": "2024-12-15",
           "condition": "Maximum discount of 300 BDT",
@@ -93,7 +93,7 @@
       "isSaleOn": false,
       "coupons": [
         {
-          "coupon-code": "CHALDAL100",
+          "coupon_code": "CHALDAL100",
           "description": "100 BDT off on orders above 2000 BDT",
           "expiry-date": "2024-12-25",
           "condition": "Limited time offer",
@@ -112,14 +112,14 @@
       "isSaleOn": true,
       "coupons": [
         {
-          "coupon-code": "APEX20",
+          "coupon_code": "APEX20",
           "description": "20% off on all men's footwear",
           "expiry-date": "2024-12-31",
           "condition": "Minimum purchase of 2500 BDT",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "APEXFS",
+          "coupon_code": "APEXFS",
           "description": "Free shipping on orders above 1500 BDT",
           "expiry-date": "2024-12-15",
           "condition": "Valid for online purchases only",
@@ -138,7 +138,7 @@
       "isSaleOn": true,
       "coupons": [
         {
-          "coupon-code": "SHWAPNO20",
+          "coupon_code": "SHWAPNO20",
           "description": "20% off on all fresh produce",
           "expiry-date": "2024-11-30",
           "condition": "In-store and online orders",
@@ -157,7 +157,7 @@
       "isSaleOn": false,
       "coupons": [
         {
-          "coupon-code": "PICKABOO5",
+          "coupon_code": "PICKABOO5",
           "description": "5% cashback on smartphones",
           "expiry-date": "2024-12-30",
           "condition": "Limited to 2000 BDT cashback",
@@ -173,10 +173,10 @@
       "brand_logo": "https://play-lh.googleusercontent.com/pseoHC0hf2ffDcdeNlojvrr0jTQKxrz_1UoU10FQHmmNwGgVwnxVBZTUK4x2cewvMBg",
       "shop-Link": "https://www.ajkerdeal.com",
       "category": "E-commerce",
-      "isSaleOn": true,
+      "isSaleOn": false,
       "coupons": [
         {
-          "coupon-code": "AJKER20",
+          "coupon_code": "AJKER20",
           "description": "20% off on fashion products",
           "expiry-date": "2024-12-15",
           "condition": "Maximum discount of 500 BDT",
@@ -195,14 +195,14 @@
       "isSaleOn": true,
       "coupons": [
         {
-          "coupon-code": "BATA15",
+          "coupon_code": "BATA15",
           "description": "15% off on all footwear",
           "expiry-date": "2024-12-31",
           "condition": "Valid on purchases over 2000 BDT",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "FREESHIPBATA",
+          "coupon_code": "FREESHIPBATA",
           "description": "Free shipping on online orders",
           "expiry-date": "2024-12-15",
           "condition": "Minimum order value of 1000 BDT",
@@ -221,14 +221,14 @@
       "isSaleOn": true,
       "coupons": [
         {
-          "coupon-code": "AARONG15",
+          "coupon_code": "AARONG15",
           "description": "15% off on clothing and home decor",
           "expiry-date": "2024-12-31",
           "condition": "Applicable on purchases over 3000 BDT",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "AARONGGIFT",
+          "coupon_code": "AARONGGIFT",
           "description": "Free gift on orders above 5000 BDT",
           "expiry-date": "2024-12-20",
           "condition": "Limited to selected categories",
