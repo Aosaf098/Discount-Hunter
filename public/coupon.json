@@ -1,0 +1,162 @@
+[
+    {
+      "_id": "1",
+      "brand_name": "Daraz Bangladesh",
+      "rating": 4.5,
+      "description": "Leading online marketplace offering a wide range of products.",
+      "brand_logo": "https://basis.org.bd/public/images/logo/3847d1361a24da5406507aa96b7b194e23012022014400.png",
+      "shop-Link": "https://www.daraz.com.bd",
+      "category": "E-commerce",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "DARAZ10",
+          "description": "10% off on electronics",
+          "expiry-date": "2024-12-31",
+          "condition": "Minimum purchase of 2000 BDT",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "FREESHIP",
+          "description": "Free shipping on orders over 1000 BDT",
+          "expiry-date": "2024-11-30",
+          "condition": "Applicable on selected products",
+          "coupon_type": "Free Shipping"
+        }
+      ]
+    },
+    {
+      "_id": "2",
+      "brand_name": "Evaly",
+      "rating": 4.0,
+      "description": "Online shopping platform with exclusive deals.",
+      "brand_logo": "https://futurestartup.b-cdn.net/wp-content/uploads/2018/12/Evaly-logo-01.jpg",
+      "shop-Link": "https://www.evaly.com.bd",
+      "category": "E-commerce",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "EVALY50",
+          "description": "50% off on fashion items",
+          "expiry-date": "2024-12-31",
+          "condition": "Maximum discount of 1000 BDT",
+          "coupon_type": "Percentage"
+        }
+      ]
+    },
+    {
+      "_id": "3",
+      "brand_name": "Pathao",
+      "rating": 4.7,
+      "description": "Popular ride-sharing and delivery service.",
+      "brand_logo": "https://seeklogo.com/images/P/pathao-logo-003EC541E2-seeklogo.com.png",
+      "shop-Link": "https://www.pathao.com",
+      "category": "Ride Sharing & Delivery",
+      "isSaleOn": false,
+      "coupons": [
+        {
+          "coupon-code": "PATHAO50",
+          "description": "50% off on first ride",
+          "expiry-date": "2024-12-31",
+          "condition": "New users only",
+          "coupon_type": "Percentage"
+        }
+      ]
+    },
+    {
+      "_id": "4",
+      "brand_name": "Foodpanda",
+      "rating": 4.6,
+      "description": "Online food delivery service.",
+      "brand_logo": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/blc2nkqwabrditk9bjyg",
+      "shop-Link": "https://www.foodpanda.com.bd",
+      "category": "Food Delivery",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "PANDA30",
+          "description": "30% off on your favorite restaurants",
+          "expiry-date": "2024-12-15",
+          "condition": "Maximum discount of 300 BDT",
+          "coupon_type": "Percentage"
+        }
+      ]
+    },
+    {
+      "_id": "5",
+      "brand_name": "Chaldal",
+      "rating": 4.3,
+      "description": "Online grocery delivery service.",
+      "brand_logo": "https://yearbook.chaldal.com/2023/assets/EGG-ROCKS!.png",
+      "shop-Link": "https://www.chaldal.com",
+      "category": "Grocery",
+      "isSaleOn": false,
+      "coupons": [
+        {
+          "coupon-code": "CHALDAL100",
+          "description": "100 BDT off on orders above 2000 BDT",
+          "expiry-date": "2024-12-25",
+          "condition": "Limited time offer",
+          "coupon_type": "Flat Discount"
+        }
+      ]
+    },
+    {
+      "_id": "6",
+      "brand_name": "Bikroy",
+      "rating": 4.2,
+      "description": "Largest marketplace for buying and selling products.",
+      "brand_logo": "https://play-lh.googleusercontent.com/OFqkNw9ns70116-WgXWbg1AJAPEkAyCnnWl_jGLZoH5zL52zuQQtIqx8sOY22mIUzg=w416-h235-rw",
+      "shop-Link": "https://www.bikroy.com",
+      "category": "Marketplace",
+      "isSaleOn": false,
+      "coupons": [
+        {
+          "coupon-code": "BIKROYADS",
+          "description": "20% off on premium ad posting",
+          "expiry-date": "2024-12-20",
+          "condition": "Applicable on all categories",
+          "coupon_type": "Percentage"
+        }
+      ]
+    },
+    {
+      "_id": "7",
+      "brand_name": "Shwapno",
+      "rating": 4.4,
+      "description": "Retail chain offering groceries and daily essentials.",
+      "brand_logo": "https://play-lh.googleusercontent.com/dIcWxUhr1KjDnz0A1UEmsScmSomBZl-7gofZt9VQq76YCo7jnRJ6mqM-2_mqQ2U4ZfU",
+      "shop-Link": "https://www.shwapno.com",
+      "category": "Retail",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "SHWAPNO20",
+          "description": "20% off on all fresh produce",
+          "expiry-date": "2024-11-30",
+          "condition": "In-store and online orders",
+          "coupon_type": "Percentage"
+        }
+      ]
+    },
+    {
+      "_id": "8",
+      "brand_name": "Pickaboo",
+      "rating": 4.5,
+      "description": "Online shop for electronics and gadgets.",
+      "brand_logo": "https://w7.pngwing.com/pngs/48/1019/png-transparent-bangladesh-pickaboo-com-online-shopping-magento-service-others-blue-company-text.png",
+      "shop-Link": "https://www.pickaboo.com",
+      "category": "Electronics",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "PICKABOO5",
+          "description": "5% cashback on smartphones",
+          "expiry-date": "2024-12-30",
+          "condition": "Limited to 2000 BDT cashback",
+          "coupon_type": "Cashback"
+        }
+      ]
+    }
+  ]
+ 
