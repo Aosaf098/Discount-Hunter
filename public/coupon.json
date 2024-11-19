@@ -1,6 +1,6 @@
 [
     {
-      "_id": "1",
+      "_id": 1,
       "brand_name": "Daraz Bangladesh",
       "rating": 4.5,
       "description": "Leading online marketplace offering a wide range of products.",
@@ -26,14 +26,14 @@
       ]
     },
     {
-      "_id": "2",
+      "_id": 2,
       "brand_name": "Evaly",
       "rating": 4.0,
       "description": "Online shopping platform with exclusive deals.",
       "brand_logo": "https://futurestartup.b-cdn.net/wp-content/uploads/2018/12/Evaly-logo-01.jpg",
       "shop-Link": "https://www.evaly.com.bd",
       "category": "E-commerce",
-      "isSaleOn": true,
+      "isSaleOn": false,
       "coupons": [
         {
           "coupon-code": "EVALY50",
@@ -45,13 +45,13 @@
       ]
     },
     {
-      "_id": "3",
+      "_id": 3,
       "brand_name": "Pathao",
       "rating": 4.7,
       "description": "Popular ride-sharing and delivery service.",
-      "brand_logo": "https://seeklogo.com/images/P/pathao-logo-003EC541E2-seeklogo.com.png",
+      "brand_logo": "https://pathao.com/wp-content/uploads/2023/10/Pathao-New-Logo.png",
       "shop-Link": "https://www.pathao.com",
-      "category": "Ride Sharing & Delivery",
+      "category": "Delivery",
       "isSaleOn": false,
       "coupons": [
         {
@@ -64,13 +64,13 @@
       ]
     },
     {
-      "_id": "4",
+      "_id": 4,
       "brand_name": "Foodpanda",
       "rating": 4.6,
       "description": "Online food delivery service.",
-      "brand_logo": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/blc2nkqwabrditk9bjyg",
+      "brand_logo": "https://www.foodpanda.com/wp-content/uploads/2024/05/foodpanda-logo-RGB-stacked.png",
       "shop-Link": "https://www.foodpanda.com.bd",
-      "category": "Food Delivery",
+      "category": "Delivery",
       "isSaleOn": true,
       "coupons": [
         {
@@ -83,13 +83,13 @@
       ]
     },
     {
-      "_id": "5",
+      "_id": 5,
       "brand_name": "Chaldal",
       "rating": 4.3,
       "description": "Online grocery delivery service.",
-      "brand_logo": "https://yearbook.chaldal.com/2023/assets/EGG-ROCKS!.png",
+      "brand_logo": "https://i.bikroy-st.com/uchaldal-com/5934faf0-c470-40ab-9e10-fba5f4143dcb/400/300/fitted.webp",
       "shop-Link": "https://www.chaldal.com",
-      "category": "Grocery",
+      "category": "E-commerce",
       "isSaleOn": false,
       "coupons": [
         {
@@ -102,30 +102,37 @@
       ]
     },
     {
-      "_id": "6",
-      "brand_name": "Bikroy",
-      "rating": 4.2,
-      "description": "Largest marketplace for buying and selling products.",
-      "brand_logo": "https://play-lh.googleusercontent.com/OFqkNw9ns70116-WgXWbg1AJAPEkAyCnnWl_jGLZoH5zL52zuQQtIqx8sOY22mIUzg=w416-h235-rw",
-      "shop-Link": "https://www.bikroy.com",
-      "category": "Marketplace",
-      "isSaleOn": false,
+      "_id": 6,
+      "brand_name": "Apex",
+      "rating": 4.5,
+      "description": "One of the leading footwear brands in Bangladesh offering quality shoes and accessories.",
+      "brand_logo": "https://mir-s3-cdn-cf.behance.net/projects/404/38db8c139830717.Y3JvcCwxMDgwLDg0NCwwLDExNw.jpg",
+      "shop-Link": "https://www.apex4u.com",
+      "category": "Footwear",
+      "isSaleOn": true,
       "coupons": [
         {
-          "coupon-code": "BIKROYADS",
-          "description": "20% off on premium ad posting",
-          "expiry-date": "2024-12-20",
-          "condition": "Applicable on all categories",
+          "coupon-code": "APEX20",
+          "description": "20% off on all men's footwear",
+          "expiry-date": "2024-12-31",
+          "condition": "Minimum purchase of 2500 BDT",
           "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "APEXFS",
+          "description": "Free shipping on orders above 1500 BDT",
+          "expiry-date": "2024-12-15",
+          "condition": "Valid for online purchases only",
+          "coupon_type": "Free Shipping"
         }
       ]
     },
     {
-      "_id": "7",
+      "_id": 7,
       "brand_name": "Shwapno",
       "rating": 4.4,
       "description": "Retail chain offering groceries and daily essentials.",
-      "brand_logo": "https://play-lh.googleusercontent.com/dIcWxUhr1KjDnz0A1UEmsScmSomBZl-7gofZt9VQq76YCo7jnRJ6mqM-2_mqQ2U4ZfU",
+      "brand_logo": "https://hypertagsolutions.com/wp-content/uploads/2020/01/Shwapno.jpg",
       "shop-Link": "https://www.shwapno.com",
       "category": "Retail",
       "isSaleOn": true,
@@ -140,14 +147,14 @@
       ]
     },
     {
-      "_id": "8",
+      "_id": 8,
       "brand_name": "Pickaboo",
       "rating": 4.5,
       "description": "Online shop for electronics and gadgets.",
-      "brand_logo": "https://w7.pngwing.com/pngs/48/1019/png-transparent-bangladesh-pickaboo-com-online-shopping-magento-service-others-blue-company-text.png",
+      "brand_logo": "https://i.ibb.co.com/7Qmr0gP/pkboo.png",
       "shop-Link": "https://www.pickaboo.com",
       "category": "Electronics",
-      "isSaleOn": true,
+      "isSaleOn": false,
       "coupons": [
         {
           "coupon-code": "PICKABOO5",
@@ -155,6 +162,77 @@
           "expiry-date": "2024-12-30",
           "condition": "Limited to 2000 BDT cashback",
           "coupon_type": "Cashback"
+        }
+      ]
+    },
+    {
+      "_id": 9,
+      "brand_name": "AjkerDeal",
+      "rating": 4.3,
+      "description": "Bangladesh's first and largest online deal site.",
+      "brand_logo": "https://play-lh.googleusercontent.com/pseoHC0hf2ffDcdeNlojvrr0jTQKxrz_1UoU10FQHmmNwGgVwnxVBZTUK4x2cewvMBg",
+      "shop-Link": "https://www.ajkerdeal.com",
+      "category": "E-commerce",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "AJKER20",
+          "description": "20% off on fashion products",
+          "expiry-date": "2024-12-15",
+          "condition": "Maximum discount of 500 BDT",
+          "coupon_type": "Percentage"
+        }
+      ]
+    },
+    {
+      "_id": 10,
+      "brand_name": "Bata Bangladesh",
+      "rating": 4.4,
+      "description": "Leading footwear and lifestyle retailer in Bangladesh.",
+      "brand_logo": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc7a5fbfb-bb7f-40f3-a179-21fead60b632_1000x1000.jpeg",
+      "shop-Link": "https://www.batabd.com",
+      "category": "Retail",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "BATA15",
+          "description": "15% off on all footwear",
+          "expiry-date": "2024-12-31",
+          "condition": "Valid on purchases over 2000 BDT",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "FREESHIPBATA",
+          "description": "Free shipping on online orders",
+          "expiry-date": "2024-12-15",
+          "condition": "Minimum order value of 1000 BDT",
+          "coupon_type": "Free Shipping"
+        }
+      ]
+    },
+    {
+      "_id": 11,
+      "brand_name": "Aarong",
+      "rating": 4.8,
+      "description": "A popular lifestyle retail chain showcasing traditional Bangladeshi crafts and products.",
+      "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/2/28/Aarong.png",
+      "shop-Link": "https://www.aarong.com",
+      "category": "Retail & Lifestyle",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "AARONG15",
+          "description": "15% off on clothing and home decor",
+          "expiry-date": "2024-12-31",
+          "condition": "Applicable on purchases over 3000 BDT",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "AARONGGIFT",
+          "description": "Free gift on orders above 5000 BDT",
+          "expiry-date": "2024-12-20",
+          "condition": "Limited to selected categories",
+          "coupon_type": "Gift"
         }
       ]
     }

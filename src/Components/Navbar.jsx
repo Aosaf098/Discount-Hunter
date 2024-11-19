@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logo from "../../public/logo.png";
 import Dropdown from "./Dropdown";
 import Welcome from "./Welcome";
@@ -11,8 +12,8 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:block ml-32">
           <ul className="flex items-center gap-8">
-            <li>Home</li>
-            <li>Brands</li>
+            <NavLink to={'/'}>Home</NavLink>
+            <NavLink to={'/brands'}>Brands</NavLink>
             <li>About Dev</li>
             <li>My Profile</li>
           </ul>

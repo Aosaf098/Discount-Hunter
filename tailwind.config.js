@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         'sora': ['Sora', 'sans-serif']
+      },
+      backgroundImage: {
+        'wave_pattern': "url('../public/wave.svg')"
       }
     },
   },
