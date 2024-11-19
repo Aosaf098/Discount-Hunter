@@ -1,29 +1,28 @@
-import Navbar from '../Components/Navbar'
-import Banner from '../Components/Banner'
-import BrandMarquee from '../Components/BrandMarquee'
-import Brands from '../Components/Brands'
-import TopBrands from '../Components/TopBrands'
-import OnSale from '../Components/OnSale'
+import Navbar from "../Components/Navbar";
+import Banner from "../Components/Banner";
+import TopBrands from "../Components/TopBrands";
+import OnSale from "../Components/OnSale";
+import Footer from "../Components/Footer";
 
 const HomeLayout = () => {
-
-
   return (
     <>
-    <div className='font-sora'>
+      <div className="font-sora">
         <header>
-            <Navbar />
+          <Navbar />
         </header>
         <menu>
-            <Banner />
-            {/* <BrandMarquee /> */}
-            {/* <Brands /> */}
-            <TopBrands />
-            <OnSale />
+          <Banner />
+          
+          <TopBrands />
+          <OnSale />
         </menu>
-    </div>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default HomeLayout
+export default HomeLayout;

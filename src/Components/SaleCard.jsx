@@ -5,7 +5,7 @@ const SaleCard = ({ brand }) => {
   return (
     <>
       {isSaleOn && (
-        <div className="card shadow-xl bg-green-400">
+        <div className="card shadow-xl bg-base-100">
           <figure>
             <img
               src={brand_logo}

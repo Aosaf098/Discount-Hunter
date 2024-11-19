@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../public/logo.png";
 import Dropdown from "./Dropdown";
 import Welcome from "./Welcome";
@@ -22,12 +22,12 @@ const Navbar = () => {
             <Dropdown />
         </div>
         <div className="hidden lg:block space-x-4">
-          <button className="bg-green-400 px-4 py-2 rounded-lg hover:bg-green-500">
+          <Link to={'/auth/login'} className="bg-green-400 px-4 py-2 rounded-lg hover:bg-green-500">
             Sign In
-          </button>
-          <button className="bg-purple-400 px-4 py-2 rounded-lg hover:bg-purple-500">
+          </Link>
+          <Link to={'/auth/register'} className="bg-purple-400 px-4 py-2 rounded-lg hover:bg-purple-500">
             Register
-          </button>
+          </Link>
         </div>
       </nav>
       <div className="mx-auto bg-[#f3f3f3]">
