@@ -3,7 +3,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 const Login = () => {
-  const { signInUser } = useContext(AuthContext);
+  const { setUser, signInUser, googleSignIn } = useContext(AuthContext);
 
   const handleLogIn = (e) => {
     e.preventDefault()
@@ -16,6 +16,7 @@ const Login = () => {
     .then(result => {
         const user = result.user
         console.log(user)
+        setUser(user)
     })
     .catch(error => {
         console.log(error.code)
@@ -68,7 +69,7 @@ const Login = () => {
           OR
           <hr className="border border-solid border-black w-1/2" />
           <div className="form-control mt-6 w-1/2">
-            <button className="btn bg-purple-400 border-none font-bold text-black flex items-center gap-3">
+            <button onClick={googleSignIn} className="btn bg-purple-400 border-none font-bold text-black flex items-center gap-3">
               <img
                 className="w-7"
                 src="https://img.icons8.com/?size=50&id=17904&format=png"
