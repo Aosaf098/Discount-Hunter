@@ -4,7 +4,7 @@ const BrandMarquee = ({ brand }) => {
   const { brand_logo } = brand;
   return (
     <>
-      <div className="w-16 mx-12">
+      <div className="w-24 mx-12">
         <img className="w-full" src={brand_logo} alt="" />
       </div>
     </>
@@ -13,8 +13,3 @@ const BrandMarquee = ({ brand }) => {
 
 export default BrandMarquee;
 
-{
-  /* <div className="w-20 aspect-square mx-10">
-          
-        </div> */
-}
