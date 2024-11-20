@@ -6,7 +6,6 @@ const Profile = () => {
 
     const {user} = useContext(AuthContext)
 
-    const {displayName, email} = user
   return (
     <>
       <div className="font-sora">
@@ -21,8 +20,8 @@ const Profile = () => {
           </div>
         </div>
         <div className="mt-10 relative">
-            <h1 className="absolute left-[700px] -top-8 text-2xl font-semibold">{displayName}</h1>
-            <p className="absolute left-[700px]">{email}</p>
+            <h1 className="absolute left-[700px] -top-8 text-2xl font-semibold">{user?.displayName}</h1>
+            <p className="absolute left-[700px]">{user?.email}</p>
             <button className="absolute left-[1250px] -top-6 bg-green-400 px-6 py-2 rounded-lg">Update Profile</button>
         </div>
       </div>

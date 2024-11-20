@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "project_name": "StarkTech",
+      "project_img": "https://i.ibb.co.com/r7sMV6C/image.png",
+      "description": "A State of the art E-commerce store for gadget freaks inspired by none other than The Ironman",
+      "technologies": ["React", "JavaScript", "Tailwind CSS"]
+    },
+    {
+      "id": 2,
+      "project_name": "Six-a-side",
+      "project_img": "https://i.ibb.co.com/C58GBQ1/image.png",
+      "description": "A squad selection site for the experts who may not be a professional team selector.",
+      "technologies": ["React", "JavaScript", "Tailwind CSS"]
+    },
+    {
+      "id": 3,
+      "project_name": "Pet Society",
+      "project_img": "https://i.ibb.co.com/tMCDFT1/image.png",
+      "description": "A Simple pet adoption site where you can adopt your beloved furry animals",
+      "technologies": ["JavaScript", "Tailwind CSS"]
+    },
+    {
+      "id": 4,
+      "project_name": "Aid Bangladesh",
+      "project_img": "https://i.ibb.co.com/QN9ps1V/image.png",
+      "description": "A Donation site for the people, by the people, of the people",
+      "technologies": ["JavaScript", "Tailwind CSS"]
+    }
+  ]

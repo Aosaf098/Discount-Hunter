@@ -12,8 +12,8 @@ const CouponCard = ({ coupon, brand_logo, shop_link }) => {
   return (
     <>
       <div className="w-11/12 mx-auto my-12 flex items-center justify-center">
-        <div className="card relative w-[300px] h-[400px] perspective-1000">
-          <div className="card-inner absolute w-full h-full transition-transform preserve-3d">
+        <div className="card-1">
+          <div className="card-inner">
             <div className="card-front front-back border border-solid border-slate-400 rounded-2xl flex flex-col items-center">
               <img
                 className="w-full h-1/2 p-3 border-b-2 border-solid border-slate-400"
