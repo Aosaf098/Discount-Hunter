@@ -4,16 +4,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Register = () => {
-  const { user, setUser, createNewUser, updateUserProfile, googleSignIn, eyeOpen, handleEyeOpen } =
+  const { setUser, createNewUser, updateUserProfile, googleSignIn, eyeOpen, handleEyeOpen } =
     useContext(AuthContext);
 
   const [errorMessage, setErrorMessage] = useState("");
 
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
-
+    console.log(12)
     const form = new FormData(e.target);
     const email = form.get("email");
     const password = form.get("password");
@@ -67,15 +67,24 @@ const Register = () => {
     }
   };
 
+  const handleSubmit = e => {
+    if (validatePassword(e.target.password.value)) {
+        handleRegister(e)
+        navigate('/')
+    }
+  }
+
+  const google = () => {
+    if (googleSignIn()) {
+        navigate('/')
+    }
+  }
+
   return (
     <>
       <div className="w-1/2 py-5 mx-auto my-14 bg-[#f3f3f3] rounded-xl shadow-xl">
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleRegister;
-            validatePassword(e.target.password.value);
-          }}
+          onSubmit={handleSubmit}
           className="card-body items-center"
         >
           <h1 className="text-4xl mb-4">Register</h1>
@@ -154,7 +163,7 @@ const Register = () => {
           <hr className="border border-solid border-black w-1/2" />
           <div className="form-control mt-6 w-1/2">
             <button
-              onClick={googleSignIn}
+              onClick={google}
               className="btn bg-purple-400 border-none font-bold text-black flex items-center gap-3"
             >
               <img

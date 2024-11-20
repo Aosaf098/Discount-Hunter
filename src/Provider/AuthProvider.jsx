@@ -31,13 +31,13 @@ const AuthProvider = ({children}) => {
     }
     const googleSignIn = () => {
         signInWithPopup(auth, googleProvider)
-        // navigate('/')
         .then(result => {
             console.log(result.user)
         })
         .catch(error => {
             console.log(error.code)
         })
+        // navigate('/')
     }
 
 
