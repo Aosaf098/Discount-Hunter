@@ -1,26 +1,31 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { setUser, signInUser, googleSignIn } = useContext(AuthContext);
+  const navigate = useNavigate()
 
   const handleLogIn = (e) => {
     e.preventDefault()
+
     const form = new FormData(e.target)
-    
     const email = form.get("email");
     const password = form.get("password");
     console.log(email, password)
+
     signInUser(email, password)
     .then(result => {
         const user = result.user
         console.log(user)
         setUser(user)
+        navigate('/')
     })
     .catch(error => {
         console.log(error.code)
     })
+
   };
   return (
     <>
@@ -63,7 +68,7 @@ const Login = () => {
           </div>
           <div className="my-4">
             <p>
-              Don't have an account? <span>Register</span>
+              Don't have an account? <Link to={'/auth/register'} className="underline decoration-solid">Register</Link>
             </p>
           </div>
           OR

@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Link } from "react-router-dom";
 
 const Register = () => {
-  const { setUser, createNewUser } = useContext(AuthContext);
+  const { user, setUser, createNewUser, updateUserProfile, currentUser } = useContext(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -10,16 +11,39 @@ const Register = () => {
     const form = new FormData(e.target);
     const email = form.get("email");
     const password = form.get("password");
+    const name = form.get("name");
+    const photo = form.get("photo");
 
     createNewUser(email, password)
     .then(result => {
         const user = result.user
         console.log(user)
         setUser(user)
+        updateUserProfile({
+            displayName: name,
+            photoURL: photo
+        })
+        .then(() => {
+            console.log(displayName, photoURL)
+        })
+        .catch((error) => {
+            console.log(error.message)
+        })
     })
     .catch(error => {
         console.log(error.code)
     })
+
+    // updateUserProfile(currentUser, name, photo)
+    // .then(result => {
+    //     const displayName = currentUser.name
+    //     const photoURL = currentUser.photo
+    //     console.log(displayName, photoURL)
+    // })
+    // .catch(error => {
+    //     console.log(error.message)
+    // })
+
   };
 
   return (
@@ -86,7 +110,7 @@ const Register = () => {
           </div>
           <div className="mt-4">
             <p>
-              Already have an account? <span>Log In</span>
+              Already have an account? <Link to={'/auth/login'} className="underline decoration-solid">Log In</Link>
             </p>
           </div>
           OR
