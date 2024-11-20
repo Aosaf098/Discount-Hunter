@@ -7,6 +7,7 @@ import Register from "../Pages/Register";
 import Home from "../Pages/Home";
 import CouponDetails from "../Components/CouponDetails";
 import Profile from "../Pages/Profile";
+import About from "../Pages/About";
 
 
 const router = createBrowserRouter([
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
     {
         path: 'profile',
         element: <Profile />
+    },
+    {
+        path: 'about',
+        element: <About />
     }
 ])
 

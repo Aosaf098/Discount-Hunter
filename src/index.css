@@ -16,13 +16,6 @@ a.active {
   .preserve-3d {
     transform-style: preserve-3d;
   }
-  /* .backface-hidden {
-    backface-visibility: hidden;
-    display: hidden;
-  }
-  .rotate-y-180 {
-    transform: rotateY(180deg);
-  } */
 }
 
 .card:hover .card-inner{
@@ -40,4 +33,27 @@ a.active {
     color: #fff;
     transform: rotateY(180deg);
 
+}
+
+.role{
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(19) infinite, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 105%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }

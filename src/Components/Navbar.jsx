@@ -20,7 +20,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-8">
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/brands"}>Brands</NavLink>
-            <Link>About Dev</Link>
+            <NavLink to={'/about'}>About Dev</NavLink>
             {(user && user?.email) && <NavLink to={'/profile'}>My Profile</NavLink>}
           </ul>
         </div>
