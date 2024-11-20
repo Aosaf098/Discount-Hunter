@@ -11,6 +11,12 @@ export default {
       },
       backgroundImage: {
         'wave_pattern': "url('../public/wave.svg')"
+      },
+      transitionProperty: {
+        "transform": "transform"
+      },
+      transitionDuration: {
+        '800': '800ms'
       }
     },
   },

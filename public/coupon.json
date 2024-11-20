@@ -12,14 +12,14 @@
         {
           "coupon_code": "DARAZ10",
           "description": "10% off on electronics",
-          "expiry-date": "2024-12-31",
+          "expiry_date": "2024-12-31",
           "condition": "Minimum purchase of 2000 BDT",
           "coupon_type": "Percentage"
         },
         {
           "coupon_code": "FREESHIP",
           "description": "Free shipping on orders over 1000 BDT",
-          "expiry-date": "2024-11-30",
+          "expiry_date": "2024-11-30",
           "condition": "Applicable on selected products",
           "coupon_type": "Free Shipping"
         }
@@ -38,7 +38,7 @@
         {
           "coupon_code": "EVALY50",
           "description": "50% off on fashion items",
-          "expiry-date": "2024-12-31",
+          "expiry_date": "2024-12-31",
           "condition": "Maximum discount of 1000 BDT",
           "coupon_type": "Percentage"
         }
@@ -57,7 +57,7 @@
         {
           "coupon_code": "PATHAO50",
           "description": "50% off on first ride",
-          "expiry-date": "2024-12-31",
+          "expiry_date": "2024-12-31",
           "condition": "New users only",
           "coupon_type": "Percentage"
         }
@@ -76,7 +76,7 @@
         {
           "coupon_code": "PANDA30",
           "description": "30% off on your favorite restaurants",
-          "expiry-date": "2024-12-15",
+          "expiry_date": "2024-12-15",
           "condition": "Maximum discount of 300 BDT",
           "coupon_type": "Percentage"
         }
@@ -95,7 +95,7 @@
         {
           "coupon_code": "CHALDAL100",
           "description": "100 BDT off on orders above 2000 BDT",
-          "expiry-date": "2024-12-25",
+          "expiry_date": "2024-12-25",
           "condition": "Limited time offer",
           "coupon_type": "Flat Discount"
         }
@@ -114,14 +114,14 @@
         {
           "coupon_code": "APEX20",
           "description": "20% off on all men's footwear",
-          "expiry-date": "2024-12-31",
+          "expiry_date": "2024-12-31",
           "condition": "Minimum purchase of 2500 BDT",
           "coupon_type": "Percentage"
         },
         {
           "coupon_code": "APEXFS",
           "description": "Free shipping on orders above 1500 BDT",
-          "expiry-date": "2024-12-15",
+          "expiry_date": "2024-12-15",
           "condition": "Valid for online purchases only",
           "coupon_type": "Free Shipping"
         }
@@ -140,7 +140,7 @@
         {
           "coupon_code": "SHWAPNO20",
           "description": "20% off on all fresh produce",
-          "expiry-date": "2024-11-30",
+          "expiry_date": "2024-11-30",
           "condition": "In-store and online orders",
           "coupon_type": "Percentage"
         }
@@ -159,7 +159,7 @@
         {
           "coupon_code": "PICKABOO5",
           "description": "5% cashback on smartphones",
-          "expiry-date": "2024-12-30",
+          "expiry_date": "2024-12-30",
           "condition": "Limited to 2000 BDT cashback",
           "coupon_type": "Cashback"
         }
@@ -178,7 +178,7 @@
         {
           "coupon_code": "AJKER20",
           "description": "20% off on fashion products",
-          "expiry-date": "2024-12-15",
+          "expiry_date": "2024-12-15",
           "condition": "Maximum discount of 500 BDT",
           "coupon_type": "Percentage"
         }
@@ -197,14 +197,14 @@
         {
           "coupon_code": "BATA15",
           "description": "15% off on all footwear",
-          "expiry-date": "2024-12-31",
+          "expiry_date": "2024-12-31",
           "condition": "Valid on purchases over 2000 BDT",
           "coupon_type": "Percentage"
         },
         {
           "coupon_code": "FREESHIPBATA",
           "description": "Free shipping on online orders",
-          "expiry-date": "2024-12-15",
+          "expiry_date": "2024-12-15",
           "condition": "Minimum order value of 1000 BDT",
           "coupon_type": "Free Shipping"
         }
@@ -223,14 +223,14 @@
         {
           "coupon_code": "AARONG15",
           "description": "15% off on clothing and home decor",
-          "expiry-date": "2024-12-31",
+          "expiry_date": "2024-12-31",
           "condition": "Applicable on purchases over 3000 BDT",
           "coupon_type": "Percentage"
         },
         {
           "coupon_code": "AARONGGIFT",
           "description": "Free gift on orders above 5000 BDT",
-          "expiry-date": "2024-12-20",
+          "expiry_date": "2024-12-20",
           "condition": "Limited to selected categories",
           "coupon_type": "Gift"
         }
