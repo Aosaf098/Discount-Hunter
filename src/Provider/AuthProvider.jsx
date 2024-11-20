@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from '../Firebase/Firebase.config';
+// import { useNavigate } from 'react-router-dom';
 
 export const AuthContext = createContext()
 
@@ -9,6 +10,9 @@ const AuthProvider = ({children}) => {
     const googleProvider = new GoogleAuthProvider()
 
     const [user, setUser] = useState(null)
+    const [eyeOpen, setEyeOpen] = useState(false)
+
+    // const navigate = useNavigate()
 
     console.log(user)
     console.log(auth.currentUser)
@@ -27,6 +31,7 @@ const AuthProvider = ({children}) => {
     }
     const googleSignIn = () => {
         signInWithPopup(auth, googleProvider)
+        // navigate('/')
         .then(result => {
             console.log(result.user)
         })
@@ -35,9 +40,14 @@ const AuthProvider = ({children}) => {
         })
     }
 
+
     const logOutUser = () => {
         console.log('logging out')
         return signOut(auth)
+    }
+
+    const handleEyeOpen = () => {
+        setEyeOpen(!eyeOpen)
     }
 
     // const signOutUser = () => {
@@ -58,7 +68,9 @@ const AuthProvider = ({children}) => {
         signInUser,
         googleSignIn,
         logOutUser,
-        updateUserProfile
+        updateUserProfile,
+        eyeOpen,
+        handleEyeOpen
     }
 
     useEffect(() => {

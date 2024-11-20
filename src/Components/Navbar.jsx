@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between lg:px-2 px-6 lg:justify-evenly py-3 bg-[#f3f3f3]">
+      <nav className="flex items-center justify-between lg:px-2 px-6 lg:justify-around py-3 bg-[#f3f3f3]">
         <div className="">
           <img className="w-16" src={logo} alt="" />
         </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="hidden lg:block space-x-4">
           {user && user?.email ? (
             <div className="flex items-center gap-6">
-              <p className="font-semibold">{user?.displayName}</p>
+              <p className="font-semibold">{user?.email}</p>
               <img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" />
               <button onClick={logOutUser} className="bg-purple-400 px-4 py-2 rounded-lg hover:bg-purple-500">
                 Log Out

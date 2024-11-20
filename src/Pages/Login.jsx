@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+
 
 const Login = () => {
-  const { setUser, signInUser, googleSignIn } = useContext(AuthContext);
+  const { setUser, signInUser, googleSignIn, eyeOpen, handleEyeOpen } = useContext(AuthContext);
   const navigate = useNavigate()
 
   const handleLogIn = (e) => {
@@ -44,17 +46,20 @@ const Login = () => {
               required
             />
           </div>
-          <div className="form-control w-1/2">
+          <div className="form-control w-1/2 relative">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
             <input
               name="password"
-              type="password"
+              type={eyeOpen ? 'password' : 'text'}
               placeholder="password"
               className="input input-bordered"
               required
             />
+            <div onClick={handleEyeOpen} className="absolute left-[92%] top-[50px] cursor-pointer">
+                {eyeOpen ? <FaRegEyeSlash size={18} /> : <FaRegEye size={18} />}
+            </div>
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
                 Forgot password?
