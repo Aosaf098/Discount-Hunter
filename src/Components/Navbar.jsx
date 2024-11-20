@@ -21,7 +21,7 @@ const Navbar = () => {
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/brands"}>Brands</NavLink>
             <Link>About Dev</Link>
-            {(user && user?.email) && <Link>My Profile</Link>}
+            {(user && user?.email) && <NavLink to={'/profile'}>My Profile</NavLink>}
           </ul>
         </div>
         <div className="block lg:hidden">

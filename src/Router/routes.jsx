@@ -6,6 +6,7 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Home from "../Pages/Home";
 import CouponDetails from "../Components/CouponDetails";
+import Profile from "../Pages/Profile";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
                 element: <Register />
             }
         ]
+    },
+    {
+        path: 'profile',
+        element: <Profile />
     }
 ])
 

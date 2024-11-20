@@ -12,7 +12,7 @@ const CouponCard = ({ coupon, brand_logo, shop_link }) => {
   return (
     <>
       <div className="w-11/12 mx-auto my-12 flex items-center justify-center">
-        <div className="card relative w-[300px] h-[320px] perspective-1000">
+        <div className="card relative w-[300px] h-[400px] perspective-1000">
           <div className="card-inner absolute w-full h-full transition-transform preserve-3d">
             <div className="card-front front-back border border-solid border-slate-400 rounded-2xl flex flex-col items-center">
               <img
@@ -26,7 +26,7 @@ const CouponCard = ({ coupon, brand_logo, shop_link }) => {
               </div>
             </div>
             <div className="card-back front-back rounded-2xl">
-              <div className="px-4 py-8 flex flex-col gap-4">
+              <div className="px-4 py-8 flex flex-col gap-6">
                 <CopyToClipboard text={coupon_code}>
                   <div className="flex justify-between gap-4 pr-4">
                     <h1 className="text-2xl font-semibold">{coupon_code}</h1>
