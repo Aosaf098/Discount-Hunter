@@ -1,8 +1,9 @@
 import Navbar from "../Components/Navbar";
-import Banner from "../Components/Banner";
-import TopBrands from "../Components/TopBrands";
-import OnSale from "../Components/OnSale";
+// import Banner from "../Components/Banner";
+// import TopBrands from "../Components/TopBrands";
+// import OnSale from "../Components/OnSale";
 import Footer from "../Components/Footer";
+import { Outlet } from "react-router-dom";
 
 const HomeLayout = () => {
   return (
@@ -12,10 +13,10 @@ const HomeLayout = () => {
           <Navbar />
         </header>
         <menu>
-          <Banner />
-          
+          <Outlet />
+          {/* <Banner />
           <TopBrands />
-          <OnSale />
+          <OnSale /> */}
         </menu>
         <footer>
           <Footer />

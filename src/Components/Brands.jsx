@@ -6,10 +6,17 @@ import wave from "../../public/wave.svg";
 import Search from "./Search";
 import BrandMarquee from "./BrandMarquee";
 import Marquee from "react-fast-marquee";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Brands = () => {
   const { brands } = useContext(HomeContext);
   const { brand_logo } = brands;
+
+//   const {id} = useParams()
+//   console.log(id)
+
+//   const data = useLoaderData()
+//   console.log(data)
 
   return (
     <>

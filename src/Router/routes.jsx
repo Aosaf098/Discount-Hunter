@@ -4,6 +4,8 @@ import Brands from "../Components/Brands";
 import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import Home from "../Pages/Home";
+import CouponDetails from "../Components/CouponDetails";
 
 
 const router = createBrowserRouter([
@@ -12,13 +14,19 @@ const router = createBrowserRouter([
         element: <HomeLayout />,
         children: [
             {
-
+                path: '/',
+                element: <Home />
             }
         ]
     },
     {
         path: '/brands',
-        element: <Brands />
+        element: <Brands />,
+    },
+    {
+        path: '/brands/:_id',
+        element: <CouponDetails />,
+        loader: () => fetch('/coupon.json')
     },
     {
         path: 'auth',

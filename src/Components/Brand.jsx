@@ -1,9 +1,14 @@
 import React from "react";
 import ReactStars from "react-stars";
 import 'animate.css';
+import { Link, useParams} from "react-router-dom";
 
 const Brand = ({ brand }) => {
-  const { brand_name, brand_logo, isSaleOn, description, category } = brand;
+
+    const params = useParams()
+    console.log(params)
+
+  const { _id, brand_name, brand_logo, isSaleOn, description, category } = brand;
   return (
     <>
       <div className="card bg-base-100 w-96 shadow-xl">
@@ -35,9 +40,9 @@ const Brand = ({ brand }) => {
             )}
           </div>
           <div className="flex items-center justify-center mt-4">
-            <button className="bg-green-400 px-4 py-2 rounded-lg hover:bg-green-500">
+            <Link to={`/brands/${_id}`} className="bg-green-400 px-4 py-2 rounded-lg hover:bg-green-500">
               View Coupon
-            </button>
+            </Link>
           </div>
         </div>
       </div>
