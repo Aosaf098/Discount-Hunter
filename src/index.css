@@ -36,7 +36,7 @@ a.active {
     backface-visibility: hidden;
 }
 .card-back{
-    background: linear-gradient(to bottom right, #2b32b2, #416cff);
+    background: linear-gradient(to bottom right, #4ade80, #416cff);
     color: #fff;
     transform: rotateY(180deg);
 

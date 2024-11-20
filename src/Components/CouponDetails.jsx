@@ -47,7 +47,7 @@ const CouponDetails = () => {
             <h1 className="text-4xl text-center">Available Coupons</h1>
             <div className="grid grid-cols-3 w-3/4 mx-auto gap-12">
               {coupons.map((coupon, idx) => (
-                <CouponCard key={idx} coupon={coupon} brand_logo={brand_logo} />
+                <CouponCard key={idx} coupon={coupon} brand_logo={brand_logo} shop_link={shop_link} />
               ))}
             </div>
           </div>
