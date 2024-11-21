@@ -37,10 +37,10 @@ const Profile = () => {
             {user?.displayName}
           </h1>
           <h1 className="ml-36 text-xl lg:hidden block">{user?.displayName}</h1>
-          <p className="absolute lg:left-[700px] left-[200px] border-4 border-solid border-blue-500 lg:block hidden">{user?.email}</p>
+          <p className="absolute lg:left-[700px] left-[200px] lg:block hidden">{user?.email}</p>
           <p className="ml-[138px] lg:hidden block">{user?.email}</p>
           <Link to={`/profile/update`}>
-            <button className="absolute lg:left-[1250px] left-[140px] lg:-top-6 top-20 bg-banner px-6 py-2 rounded-lg lg:block hidden">
+            <button className="absolute lg:left-[1200px] left-[140px] lg:-top-6 top-20 bg-banner px-6 py-2 rounded-lg lg:block hidden">
               Update Profile
             </button>
             <button className="bg-banner px-6 py-2 rounded-lg lg:hidden block ml-32 mt-10">
