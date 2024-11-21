@@ -3,6 +3,7 @@ import Banner from "../Components/Banner";
 import TopBrands from "../Components/TopBrands";
 import OnSale from "../Components/OnSale";
 import How from "../Components/How";
+import Download from "../Components/Download";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <TopBrands />
       <OnSale />
       <How />
+      <Download />
     </>
   );
 };

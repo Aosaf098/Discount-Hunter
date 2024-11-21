@@ -32,7 +32,7 @@ const Login = () => {
   return (
     <>
       <div className="lg:w-1/2 py-12 mx-auto my-14 bg-[#f3f3f3] rounded-xl shadow-xl">
-        <form onSubmit={handleLogIn} className="card-body items-center border-4 border-solid border-blue-500">
+        <form onSubmit={handleLogIn} className="card-body items-center">
           <h1 className="text-4xl mb-4">Sign In</h1>
           <div className="form-control lg:w-1/2">
             <label className="label">
