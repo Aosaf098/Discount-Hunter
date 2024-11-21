@@ -6,7 +6,6 @@ import { Link, useParams} from "react-router-dom";
 const Brand = ({ brand }) => {
 
     const params = useParams()
-    console.log(params)
 
   const { _id, brand_name, brand_logo, isSaleOn, description, category } = brand;
   return (
@@ -40,7 +39,7 @@ const Brand = ({ brand }) => {
             )}
           </div>
           <div className="flex items-center justify-center mt-4">
-            <Link to={`/brands/${_id}`} className="bg-green-400 px-4 py-2 rounded-lg hover:bg-green-500">
+            <Link to={`/brands/${_id}`} className="bg-banner px-4 py-2 rounded-lg hover:bg-green-500">
               View Coupon
             </Link>
           </div>

@@ -9,6 +9,8 @@ import CouponDetails from "../Components/CouponDetails";
 import Profile from "../Pages/Profile";
 import About from "../Pages/About";
 import PrivateRoute from "./PrivateRoute";
+import Update from "../Components/Update";
+import ForgotPassword from "../Components/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -53,9 +55,17 @@ const router = createBrowserRouter([
     element: <Profile />,
   },
   {
+    path: "/profile/update",
+    element: <Update />,
+  },
+  {
     path: "about",
     element: <About />,
   },
+  {
+    path: 'forgot',
+    element: <ForgotPassword />
+  }
 ]);
 
 export default router;

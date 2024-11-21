@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="flex items-center gap-6">
               <p className="font-semibold">{user?.email}</p>
               <img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" />
-              <button onClick={logOutUser} className="bg-purple-400 px-4 py-2 rounded-lg hover:bg-purple-500">
+              <button onClick={logOutUser} className="bg-banner px-4 py-2 rounded-lg hover:bg-purple-500">
                 Log Out
               </button>
             </div>

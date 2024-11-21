@@ -4,9 +4,9 @@ import Carousel from "./Carousel";
 const Banner = () => {
   return (
     <>
-      <div className="w-3/4 mx-auto my-12 p-6 lg:pt-12 lg:pb-60 rounded-2xl bg-[#4ade80] flex flex-col items-center justify-center relative gap-10">
+      <div className="w-3/4 mx-auto my-12 p-6 lg:pt-12 lg:pb-60 rounded-2xl bg-banner flex flex-col items-center justify-center relative gap-10">
         <div className="flex flex-col justify-center px-2">
-          <h1 className="lg:text-6xl text-4xl font-bold text-center">
+          <h1 className="lg:text-6xl text-4xl font-bold text-center text-white">
             Shop with Ease, Unlock Unprecedented Savings.
           </h1>
           <p className="text-normal text-center my-8">

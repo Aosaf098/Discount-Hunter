@@ -10,7 +10,7 @@ const Projekt = () => {
         .then((res) => res.json())
         .then((data) => setProjekts(data))
     }, [])
-    console.log(projekts)
+
 
   return (
     <>

@@ -6,7 +6,7 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 
 const Login = () => {
-  const { setUser, signInUser, googleSignIn, eyeOpen, handleEyeOpen } = useContext(AuthContext);
+  const { setUser, signInUser, googleSignIn, eyeOpen, handleEyeOpen, forgetPassword } = useContext(AuthContext);
   const navigate = useNavigate()
 
   const handleLogIn = (e) => {
@@ -15,7 +15,7 @@ const Login = () => {
     const form = new FormData(e.target)
     const email = form.get("email");
     const password = form.get("password");
-    console.log(email, password)
+
 
     signInUser(email, password)
     .then(result => {
@@ -27,6 +27,7 @@ const Login = () => {
     .catch(error => {
         console.log(error.code)
     })
+
 
   };
   return (
@@ -61,13 +62,13 @@ const Login = () => {
                 {eyeOpen ? <FaRegEyeSlash size={18} /> : <FaRegEye size={18} />}
             </div>
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+              <Link to={'/forgot'} className="label-text-alt link link-hover">
                 Forgot password?
-              </a>
+              </Link>
             </label>
           </div>
           <div className="form-control mt-6 w-1/2">
-            <button className="btn bg-purple-400 border-none font-bold text-black">
+            <button className="btn bg-banner border-none font-bold text-black">
               Sign In
             </button>
           </div>
@@ -79,7 +80,7 @@ const Login = () => {
           OR
           <hr className="border border-solid border-black w-1/2" />
           <div className="form-control mt-6 lg:w-1/2">
-            <button onClick={googleSignIn} className="btn bg-purple-400 border-none font-bold text-black flex items-center gap-3">
+            <button onClick={googleSignIn} className="btn bg-banner border-none font-bold text-black flex items-center gap-3">
               <img
                 className="w-7"
                 src="https://img.icons8.com/?size=50&id=17904&format=png"

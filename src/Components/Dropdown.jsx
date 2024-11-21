@@ -1,6 +1,6 @@
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import { Link } from "react-router-dom";
 
 const Dropdown = () => {
   return (
@@ -10,14 +10,20 @@ const Dropdown = () => {
           <RxHamburgerMenu size={20} />
         </summary>
         <ul className="menu dropdown-content -right-4 top-20 bg-base-100 rounded-box z-[1] w-32 space-y-4 p-2 shadow">
-          <li>Home</li>
-          <li>Brands</li>
-          <li>About Dev</li>
-          <li>My Profile</li>
-          <button className="bg-green-400 px-4 py-2 rounded-lg">Sign In</button>
-          <button className="bg-purple-400 px-4 py-2 rounded-lg">
-            Register
-          </button>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/brands"}>Brands</Link>
+          <Link to={"/about"}>About Dev</Link>
+          <Link to={"/profile"}>My Profile</Link>
+          <Link to={"/auth/login"}>
+            <button className="bg-green-400 px-4 py-2 rounded-lg w-full">
+              Sign In
+            </button>
+          </Link>
+          <Link to={'/auth/register'}>
+            <button className="bg-purple-400 px-4 py-2 rounded-lg w-full">
+              Register
+            </button>
+          </Link>
         </ul>
       </details>
     </>

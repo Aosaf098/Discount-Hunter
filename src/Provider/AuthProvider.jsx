@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from '../Firebase/Firebase.config';
 // import { useNavigate } from 'react-router-dom';
 
@@ -9,8 +9,8 @@ const AuthProvider = ({children}) => {
 
     const googleProvider = new GoogleAuthProvider()
 
-    const [user, setUser] = useState(null)
-    const [eyeOpen, setEyeOpen] = useState(false)
+    const [user, setUser] = useState('Rahim')
+    const [eyeOpen, setEyeOpen] = useState(true)
     const [loading, setLoading] = useState(true)
 
     // const navigate = useNavigate()
@@ -25,6 +25,9 @@ const AuthProvider = ({children}) => {
     }
 
     const updateUserProfile = (updatedData) => {
+        setLoading(true)
+        setUser(currentUser)
+        console.log(currentUser)
         return updateProfile(auth.currentUser, updatedData)
     }
 
@@ -46,12 +49,15 @@ const AuthProvider = ({children}) => {
 
     const logOutUser = () => {
         setLoading(true)
-        console.log('logging out')
         return signOut(auth)
     }
 
     const handleEyeOpen = () => {
         setEyeOpen(!eyeOpen)
+    }
+
+    const forgetPassword = (email) => {
+        return sendPasswordResetEmail(auth, email)
     }
 
     // const signOutUser = () => {
@@ -75,7 +81,8 @@ const AuthProvider = ({children}) => {
         updateUserProfile,
         eyeOpen,
         handleEyeOpen,
-        loading
+        loading,
+        forgetPassword
     }
 
     useEffect(() => {

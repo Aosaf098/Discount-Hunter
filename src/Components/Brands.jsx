@@ -7,16 +7,13 @@ import Search from "./Search";
 import BrandMarquee from "./BrandMarquee";
 import Marquee from "react-fast-marquee";
 import { useLoaderData, useParams } from "react-router-dom";
+import Footer from "./Footer";
 
 const Brands = () => {
   const { brands } = useContext(HomeContext);
   const { brand_logo } = brands;
 
-//   const {id} = useParams()
-//   console.log(id)
 
-//   const data = useLoaderData()
-//   console.log(data)
 
   return (
     <>
@@ -25,7 +22,7 @@ const Brands = () => {
           <Navbar />
         </div>
         <div
-          className={`w-11/12 mx-auto rounded-lg mt-4 bg-green-400 flex flex-col items-center py-12 gap-6`}
+          className={`w-11/12 mx-auto rounded-lg mt-4 bg-banner flex flex-col items-center py-12 gap-6`}
         >
           <h2 className="text-4xl font-semibold">Brands</h2>
           <p className="text-2xl font-medium text-center">
@@ -35,7 +32,7 @@ const Brands = () => {
             <Search />
           </div>
         </div>
-        <div className="w-11/12 mx-auto bg-[#f3f3f3] h-[100px] mt-4 space-x-8 flex">
+        <div className="w-11/12 mx-auto h-[100px] mt-4 space-x-8 flex">
           <Marquee speed={80} pauseOnHover={true} gradient={false}>
             {brands.map((brand, idx) => (
               <BrandMarquee key={idx} brand={brand} />
@@ -51,6 +48,7 @@ const Brands = () => {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

@@ -2,10 +2,11 @@ import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import CouponCard from "./CouponCard";
+import Footer from "./Footer";
 
 const CouponDetails = () => {
   const { _id } = useParams();
-  //   console.log(params);
+  
   const brandsData = useLoaderData();
   const id = Number(_id);
   const brand = brandsData.find((brand) => brand._id === id);
@@ -18,7 +19,7 @@ const CouponDetails = () => {
     shop_link,
     coupons,
   } = brand;
-  console.log(coupons);
+  
   return (
     <>
       <div className="font-sora">
@@ -52,6 +53,7 @@ const CouponDetails = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

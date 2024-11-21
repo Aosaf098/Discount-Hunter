@@ -13,7 +13,7 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    console.log(12)
+    
     const form = new FormData(e.target);
     const email = form.get("email");
     const password = form.get("password");
@@ -24,7 +24,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        setUser(user);
+        
         // navigate("/");
         updateUserProfile({
           displayName: name,
@@ -36,6 +36,7 @@ const Register = () => {
           .catch((error) => {
             console.log(error.message);
           });
+          setUser(user);
       })
       .catch((error) => {
         console.log(error.code);
@@ -147,7 +148,7 @@ const Register = () => {
             </label>
           </div>
           <div className="form-control mt-6 w-1/2">
-            <button className="btn bg-purple-400 border-none font-bold text-black">
+            <button className="btn bg-banner border-none font-bold text-black">
               Register
             </button>
           </div>
@@ -164,7 +165,7 @@ const Register = () => {
           <div className="form-control mt-6 lg:w-1/2">
             <button
               onClick={google}
-              className="btn bg-purple-400 border-none font-bold text-black flex items-center gap-3"
+              className="btn bg-banner border-none font-bold text-black flex items-center gap-3"
             >
               <img
                 className="w-7"

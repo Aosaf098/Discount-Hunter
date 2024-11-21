@@ -3,70 +3,73 @@
 @tailwind utilities;
 
 a.active {
-  background-color: #4ade80;
+  background: linear-gradient(to bottom right, #4ade80, #416cff);
   font-weight: 400;
   padding: 8px 14px;
   border-radius: 8px;
 }
 
 @layer utilities {
-    .perspective-1000 {
-      perspective: 1000px;
-    }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
   .preserve-3d {
     transform-style: preserve-3d;
   }
 }
 
-.card-1{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    perspective: 1000px;
+.card-1 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
 }
-.card-inner{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+.card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-.card-1:hover .card-inner{
-    transform: rotateY(-180deg);
-}
-
-.front-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-.card-back{
-    background: linear-gradient(to bottom right, #4ade80, #416cff);
-    color: #fff;
-    transform: rotateY(180deg);
-
+.card-1:hover .card-inner {
+  transform: rotateY(-180deg);
 }
 
-.role{
-    margin-inline: auto;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 1px solid;
-    animation: typing 3s steps(19) infinite, blink 1s step-end infinite;
+.front-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card-back {
+  background: linear-gradient(to bottom right, #4ade80, #416cff);
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.bg-banner {
+  background: linear-gradient(to bottom right, #4ade80, #416cff);
+}
+
+.role {
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid;
+  animation: typing 3s steps(19) infinite, blink 1s step-end infinite;
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 105%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 105%;
+  }
 }
 
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
