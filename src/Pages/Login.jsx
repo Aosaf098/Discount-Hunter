@@ -3,12 +3,15 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-
+import { toast } from "react-toastify";
 
 const Login = () => {
   const { setUser, signInUser, googleSignIn, eyeOpen, handleEyeOpen, forgetPassword } = useContext(AuthContext);
   const navigate = useNavigate()
 
+  const handleToast = () => {
+    toast.success(12334)
+  }
   const handleLogIn = (e) => {
     e.preventDefault()
 
@@ -20,11 +23,13 @@ const Login = () => {
     signInUser(email, password)
     .then(result => {
         const user = result.user
-        console.log(user)
+        console.log(122)
         setUser(user)
-        navigate('/')
+        toast.success('Signed In Successfully')
+        setTimeout(() => navigate('/'), 2000)
     })
     .catch(error => {
+        toast.error(error.message)
         console.log(error.code)
     })
 
@@ -90,6 +95,7 @@ const Login = () => {
             </button>
           </div>
         </form>
+        <button onClick={handleToast} className="bg-banner">Toast Check</button>
       </div>
     </>
   );

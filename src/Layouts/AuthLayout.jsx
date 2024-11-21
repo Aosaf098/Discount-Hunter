@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import { Outlet } from "react-router-dom";
-import Footer from "../Components/Footer";
-import AuthProvider from "../Provider/AuthProvider";
+import { ToastContainer } from "react-toastify";
 
 const AuthLayout = () => {
   return (
@@ -11,8 +10,8 @@ const AuthLayout = () => {
         <Navbar />
         <div className="px-4 lg:px-0">
           <Outlet />
+          <ToastContainer />
         </div>
-        <Footer />
       </div>
     </>
   );

@@ -37,7 +37,7 @@ const Profile = () => {
           </h1>
           <p className="absolute lg:left-[700px] left-[200px]">{user?.email}</p>
           <Link to={`/profile/update`}>
-            <button className="absolute lg:left-[1250px] left-[140px] top-20 bg-banner px-6 py-2 rounded-lg">
+            <button className="absolute lg:left-[1250px] left-[140px] lg:-top-6 top-20 bg-banner px-6 py-2 rounded-lg">
               Update Profile
             </button>
           </Link>

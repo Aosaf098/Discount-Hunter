@@ -11,11 +11,13 @@ import About from "../Pages/About";
 import PrivateRoute from "./PrivateRoute";
 import Update from "../Components/Update";
 import ForgotPassword from "../Components/ForgotPassword";
+import Error from "../Components/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",

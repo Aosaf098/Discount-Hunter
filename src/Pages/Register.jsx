@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { setUser, createNewUser, updateUserProfile, googleSignIn, eyeOpen, handleEyeOpen } =
@@ -25,6 +26,7 @@ const Register = () => {
         const user = result.user;
         console.log(user);
         
+        
         // navigate("/");
         updateUserProfile({
           displayName: name,
@@ -40,6 +42,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.log(error.code);
+        toast.error(error.message)
       });
   };
 
@@ -71,7 +74,8 @@ const Register = () => {
   const handleSubmit = e => {
     if (validatePassword(e.target.password.value)) {
         handleRegister(e)
-        navigate('/')
+        toast.success('Registered Successfully')
+        setTimeout(() => navigate('/'), 2000)
     }
   }
 

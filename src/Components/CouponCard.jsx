@@ -4,11 +4,15 @@ import "../index.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { PiCopySimpleDuotone } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const CouponCard = ({ coupon, brand_logo, shop_link }) => {
   const { coupon_code, description, expiry_date, condition, coupon_type } =
     coupon;
 
+    const handleToast = () => {
+        toast.success('Copied to the Clipboard')
+    }
   return (
     <>
       <div className="w-11/12 mx-auto my-12 flex items-center justify-center">
@@ -30,7 +34,7 @@ const CouponCard = ({ coupon, brand_logo, shop_link }) => {
                 <CopyToClipboard text={coupon_code}>
                   <div className="flex justify-between gap-4 pr-4">
                     <h1 className="text-2xl font-semibold">{coupon_code}</h1>
-                    <button><PiCopySimpleDuotone size={24} /></button>
+                    <button onClick={handleToast}><PiCopySimpleDuotone size={24} /></button>
                   </div>
                 </CopyToClipboard>
                 <p className="text-xl font-semibold">{description}</p>
