@@ -31,9 +31,9 @@ const Update = () => {
   };
   return (
     <>
-      <div className="w-1/2 mx-auto p-4 mt-28 font-sora">
-        <h1 className="text-4xl text-center font-medium">Update Information</h1>
-        <form onSubmit={handleUpdate} className="flex gap-10 mt-8 items-center">
+      <div className="lg:w-1/2 mx-auto p-4 lg:mt-28 mt-12 font-sora">
+        <h1 className="lg:text-4xl text-2xl text-center font-medium">Update Information</h1>
+        <form onSubmit={handleUpdate} className="flex lg:gap-10 mt-8 items-center lg:flex-row flex-col">
           <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Name</span>

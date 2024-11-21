@@ -1,5 +1,3 @@
-import React, { useContext } from "react";
-import { HomeContext } from "../Provider/HomeProvider";
 import "../index.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { PiCopySimpleDuotone } from "react-icons/pi";

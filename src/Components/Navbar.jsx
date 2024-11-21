@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="">
           <img className="w-16" src={logo} alt="" />
         </div>
-        <div className="hidden lg:block ml-32">
+        <div className={`hidden lg:block ${(user && user?.email) && 'pl-96'}`}>
           <ul className="flex items-center gap-8">
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/brands"}>Brands</NavLink>

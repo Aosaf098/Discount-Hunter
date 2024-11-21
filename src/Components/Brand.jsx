@@ -29,7 +29,7 @@ const Brand = ({ brand }) => {
               <ReactStars size={24} />
             </div>
             {isSaleOn ? (
-              <div className="badge badge-secondary bg-green-500 border-none animate__animated animate__bounce animate__repeat-10">
+              <div className="badge badge-secondary bg-green-500 border-none animate__animated animate__bounce animate__infinite">
                 On Sale
               </div>
             ) : (
