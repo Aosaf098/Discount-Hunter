@@ -55,19 +55,21 @@ const router = createBrowserRouter([
   {
     path: "profile",
     element: <Profile />,
-  },
-  {
-    path: "/profile/update",
-    element: <Update />,
+    children: [
+      {
+        path: "/profile/update",
+        element: <Update />,
+      },
+    ],
   },
   {
     path: "about",
     element: <About />,
   },
   {
-    path: 'forgot',
-    element: <ForgotPassword />
-  }
+    path: "forgot",
+    element: <ForgotPassword />,
+  },
 ]);
 
 export default router;

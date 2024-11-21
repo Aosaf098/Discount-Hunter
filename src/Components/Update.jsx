@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import Navbar from "./Navbar";
+import { toast } from "react-toastify";
 
 const Update = () => {
   const { updateUserProfile, setUser, currentUser } = useContext(AuthContext);
@@ -20,12 +21,13 @@ const Update = () => {
       .then(() => {
         setUser(currentUser)
         console.log(displayName, photoURL);
-        navigate('/profile')
+        // toast.success('Profile Updated Successfully')
+        setTimeout(() => navigate('/profile'), 2000)
       })
       .catch((error) => {
         console.log(error.message);
       });
-    navigate('/profile')
+    // navigate('/profile')
   };
   return (
     <>

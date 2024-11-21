@@ -13,11 +13,9 @@ const Profile = () => {
         <Navbar />
         <div>
           <h1 className="mt-10 text-center text-4xl font-bold">User Profile</h1>
+          <h1 className="lg:text-4xl text-2xl font-semibold text-center mt-4">Welcome {user?.displayName}</h1>
         </div>
         <div className="lg:w-1/2 mx-auto mt-14 h-[250px] rounded-xl relative px-4">
-        <div className="absolute top-[100px] lg:left-[320px] left-[120px]">
-            <h1 className="lg:text-4xl text-2xl font-semibold text-white">Welcome {user?.displayName}</h1>
-        </div>
           <img
             className="w-full h-full object-cover rounded-xl"
             src="https://i0.wp.com/nftartwithlauren.com/wp-content/uploads/2024/01/laurenmcdonaghpereiraphoto_A_beach_sunset_with_a_horseback_ri_db01a57e-5be8-4887-9d40-80528f1d2ca4_1.png?fit=1456%2C816&ssl=1"

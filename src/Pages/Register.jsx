@@ -80,10 +80,9 @@ const Register = () => {
   }
 
   const google = () => {
-    if (googleSignIn()) {
-        navigate('/')
-    }
-  }
+    googleSignIn()
+    setTimeout(() => navigate('/'), 10000)
+}
 
   return (
     <>

@@ -6,12 +6,10 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const Login = () => {
-  const { setUser, signInUser, googleSignIn, eyeOpen, handleEyeOpen, forgetPassword } = useContext(AuthContext);
+  const { user, setUser, signInUser, googleSignIn, eyeOpen, handleEyeOpen, forgetPassword } = useContext(AuthContext);
   const navigate = useNavigate()
 
-  const handleToast = () => {
-    toast.success(12334)
-  }
+  
   const handleLogIn = (e) => {
     e.preventDefault()
 
@@ -32,9 +30,13 @@ const Login = () => {
         toast.error(error.message)
         console.log(error.code)
     })
-
-
   };
+
+  const google = () => {
+    googleSignIn()
+    setTimeout(() => navigate('/'), 10000)
+}
+
   return (
     <>
       <div className="lg:w-1/2 py-12 mx-auto my-14 bg-[#f3f3f3] rounded-xl shadow-xl">
@@ -85,7 +87,7 @@ const Login = () => {
           OR
           <hr className="border border-solid border-black w-1/2" />
           <div className="form-control mt-6 lg:w-1/2">
-            <button onClick={googleSignIn} className="btn bg-banner border-none font-bold text-black flex items-center gap-3">
+            <button onClick={google} className="btn bg-banner border-none font-bold text-black flex items-center gap-3">
               <img
                 className="w-7"
                 src="https://img.icons8.com/?size=50&id=17904&format=png"
@@ -95,7 +97,6 @@ const Login = () => {
             </button>
           </div>
         </form>
-        <button onClick={handleToast} className="bg-banner">Toast Check</button>
       </div>
     </>
   );

@@ -1,7 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from '../Firebase/Firebase.config';
-// import { useNavigate } from 'react-router-dom';
 
 export const AuthContext = createContext()
 
@@ -13,7 +12,6 @@ const AuthProvider = ({children}) => {
     const [eyeOpen, setEyeOpen] = useState(true)
     const [loading, setLoading] = useState(true)
 
-    // const navigate = useNavigate()
 
     console.log(user)
     console.log(auth.currentUser)
@@ -43,7 +41,6 @@ const AuthProvider = ({children}) => {
         .catch(error => {
             console.log(error.code)
         })
-        // navigate('/')
     }
 
 

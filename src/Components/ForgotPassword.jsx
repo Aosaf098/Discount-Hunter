@@ -1,20 +1,24 @@
 import React, { useContext } from "react";
 import Navbar from "./Navbar";
 import { AuthContext } from "../Provider/AuthProvider";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const ForgotPassword = () => {
     const {currentUser, forgetPassword, logOutUser} = useContext(AuthContext)
+
+    const navigate = useNavigate()
 
     const handleReset = (e) => {
         e.preventDefault()
         
         forgetPassword(e.target.email.value)
         .then(() => {
-            alert('Password Reset Email Sent')
-            logOutUser()
+            toast.success('Password Reset Email Sent')
+            setTimeout(() => window.location.assign('https://mail.google.com/'), 2000)
         })
         .catch((error) => {
-            alert(error.message)
+            toast.error(error.message)
         })
     }
   return (
