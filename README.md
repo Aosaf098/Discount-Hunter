@@ -1,8 +1,22 @@
-# React + Vite
+Project Name: Discount Hunter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link: https://discount-hunter-233c8.web.app/
 
-Currently, two official plugins are available:
+Purpose: Discount Hunter is your ultimate companion for finding the best deals and discounts across a variety of brands and retailers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:
+
+1. Firebase Authentication
+2. Available Coupon Codes from various Brands
+3. View Brand & Coupon Details
+4. Updating Username and PhotoURL
+5. View Information about the Developer
+
+
+npm Packages:
+
+1. react-toastify
+2. animate.css
+3. react-copy-to-clipboard
+4. react-fast-marquee
+5. react-stars
