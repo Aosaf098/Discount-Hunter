@@ -82,13 +82,13 @@ const Register = () => {
 
   return (
     <>
-      <div className="w-1/2 py-5 mx-auto my-14 bg-[#f3f3f3] rounded-xl shadow-xl">
+      <div className="lg:w-1/2 py-5 mx-auto my-14 bg-[#f3f3f3] rounded-xl shadow-xl">
         <form
           onSubmit={handleSubmit}
           className="card-body items-center"
         >
           <h1 className="text-4xl mb-4">Register</h1>
-          <div className="form-control w-1/2">
+          <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Name</span>
             </label>
@@ -100,7 +100,7 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-control w-1/2">
+          <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Photo URL</span>
             </label>
@@ -112,7 +112,7 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-control w-1/2">
+          <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Email</span>
             </label>
@@ -124,7 +124,7 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-control w-1/2 relative">
+          <div className="form-control lg:w-1/2 relative">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
@@ -135,7 +135,7 @@ const Register = () => {
               className="input input-bordered"
               required
             />
-            <div onClick={handleEyeOpen} className="absolute left-[92%] top-[50px] cursor-pointer">
+            <div onClick={handleEyeOpen} className="absolute left-[88%] lg:left-[92%] top-[50px] cursor-pointer">
                 {eyeOpen ? <FaRegEyeSlash size={18} /> : <FaRegEye size={18} />}
             </div>
             {errorMessage && (
@@ -161,7 +161,7 @@ const Register = () => {
           </div>
           OR
           <hr className="border border-solid border-black w-1/2" />
-          <div className="form-control mt-6 w-1/2">
+          <div className="form-control mt-6 lg:w-1/2">
             <button
               onClick={google}
               className="btn bg-purple-400 border-none font-bold text-black flex items-center gap-3"

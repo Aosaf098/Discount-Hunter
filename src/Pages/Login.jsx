@@ -31,10 +31,10 @@ const Login = () => {
   };
   return (
     <>
-      <div className="w-1/2 py-12 mx-auto my-14 bg-[#f3f3f3] rounded-xl shadow-xl">
-        <form onSubmit={handleLogIn} className="card-body items-center">
+      <div className="lg:w-1/2 py-12 mx-auto my-14 bg-[#f3f3f3] rounded-xl shadow-xl">
+        <form onSubmit={handleLogIn} className="card-body items-center border-4 border-solid border-blue-500">
           <h1 className="text-4xl mb-4">Sign In</h1>
-          <div className="form-control w-1/2">
+          <div className="form-control lg:w-1/2">
             <label className="label">
               <span className="label-text">Email</span>
             </label>
@@ -46,7 +46,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="form-control w-1/2 relative">
+          <div className="form-control lg:w-1/2 relative">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
@@ -57,7 +57,7 @@ const Login = () => {
               className="input input-bordered"
               required
             />
-            <div onClick={handleEyeOpen} className="absolute left-[92%] top-[50px] cursor-pointer">
+            <div onClick={handleEyeOpen} className="absolute left-[88%] lg:left-[92%] top-[50px] cursor-pointer">
                 {eyeOpen ? <FaRegEyeSlash size={18} /> : <FaRegEye size={18} />}
             </div>
             <label className="label">
@@ -78,7 +78,7 @@ const Login = () => {
           </div>
           OR
           <hr className="border border-solid border-black w-1/2" />
-          <div className="form-control mt-6 w-1/2">
+          <div className="form-control mt-6 lg:w-1/2">
             <button onClick={googleSignIn} className="btn bg-purple-400 border-none font-bold text-black flex items-center gap-3">
               <img
                 className="w-7"

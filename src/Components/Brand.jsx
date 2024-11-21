@@ -11,7 +11,7 @@ const Brand = ({ brand }) => {
   const { _id, brand_name, brand_logo, isSaleOn, description, category } = brand;
   return (
     <>
-      <div className="card bg-base-100 w-96 shadow-xl">
+      <div className="card bg-base-100 lg:w-96 shadow-xl">
         <figure>
           <img
             src={brand_logo}

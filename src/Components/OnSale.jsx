@@ -10,7 +10,7 @@ const OnSale = () => {
     <>
       <div className="my-10">
         <h1 className="text-center mx-auto text-4xl">Sale Offers</h1>
-        <div className="w-4/5 mx-auto mt-10 grid grid-cols-3 px-20 gap-12">
+        <div className="w-4/5 mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 lg:px-20 gap-12">
             {
                 brands.map((brand, idx) => <SaleCard key={idx} brand={brand} />)
             }

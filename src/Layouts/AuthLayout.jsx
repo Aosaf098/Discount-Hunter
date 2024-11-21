@@ -9,7 +9,7 @@ const AuthLayout = () => {
     <>
       <div className="font-sora h-dvh">
         <Navbar />
-        <div>
+        <div className="px-4 lg:px-0">
           <Outlet />
         </div>
         <Footer />

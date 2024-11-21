@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 const Skills = () => {
   return (
     <>
-      <div className="w-1/2 mx-auto mt-10 flex flex-col items-center gap-4 justify-center p-4">
+      <div className="lg:w-1/2 mx-auto mt-10 flex flex-col items-center gap-4 justify-center p-4">
         <h3 className="text-4xl">Skills</h3>
         <Marquee speed={100}>
           <div className="p-4 flex justify-between gap-4 *:w-12 *:mx-2">
